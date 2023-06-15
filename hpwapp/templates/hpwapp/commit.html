@@ -1,0 +1,16 @@
+{% extends "hpwapp/base.html" %}
+
+{% block title %}1 commit info{% endblock %}
+
+{% block content %}
+<h1>{{commit.name}}</h1>
+<h2>{{commit.day}}</h2>
+<h3>{{commit.date}}</h3>
+<h4>{{commit.time}}</h4>
+<h5>{{commit.message}}</h5>
+<!-- <ul>
+    {% for commit in commits.all %}
+    <li>{{commit.name}}</li>
+    {% endfor %}
+</ul> -->
+{% endblock %}

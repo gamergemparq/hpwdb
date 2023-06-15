@@ -1,0 +1,13 @@
+{% extends 'hpwapp/base.html' %}
+
+{% block title %} Create new Commit {% endblock %}
+
+{% block content %}
+Create new Commit
+<form method="post" action="/create/">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit", name="save", value="save">Create New</button>
+    <button type="submit", name="newItem", value="newItem">Add Item</button>
+</form>
+{% endblock %}

@@ -1,0 +1,19 @@
+{% extends "hpwapp/base.html" %}
+
+{% block title %}Edit a commit{% endblock %}
+
+{% block content %}
+<!-- <h1>{{commit.name}}</h1>
+<h2>{{commit.day}}</h2>
+<h3>{{commit.date}}</h3>
+<h4>{{commit.time}}</h4>
+<h5>{{commit.message}}</h5> -->
+
+Edit a Commit
+<form method="post" action="/edit/">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit", name="save", value="save">Save Edit</button>
+</form>
+
+{% endblock %}
