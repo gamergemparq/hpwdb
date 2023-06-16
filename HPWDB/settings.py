@@ -107,7 +107,7 @@ WSGI_APPLICATION = "HPWDB.wsgi.application"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'HPWDB',
+        'NAME': 'hazratm$HPWDB',
         'USER': 'hazratm',
         'PASSWORD': 'MyPass@word',
         'HOST': 'hazratm.mysql.pythonanywhere-services.com',
