@@ -85,20 +85,39 @@ WSGI_APPLICATION = "HPWDB.wsgi.application"
 #     }
 # }
 
+# For local development use
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'mssql',
+#         'NAME': 'HPWDB',
+#         'USER': 'SA',
+#         'PASSWORD': 'MyPass@word',
+#         'HOST': '127.0.0.1',
+#         'PORT': '1433',
+#         # 'Trusted_Connection': 'yes',
+
+#         'OPTIONS': {
+#             'driver': 'ODBC Driver 18 for SQL Server',
+#             'extra_params': 'TrustServerCertificate=yes',
+#         },
+#     },
+# }
+
+# For pythonanywhere use
 DATABASES = {
     'default': {
-        'ENGINE': 'mssql',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': 'HPWDB',
-        'USER': 'SA',
+        'USER': 'hazratm',
         'PASSWORD': 'MyPass@word',
-        'HOST': '127.0.0.1',
-        'PORT': '1433',
+        'HOST': 'hazratm.mysql.pythonanywhere-services.com',
+        'PORT': '3306',
         # 'Trusted_Connection': 'yes',
 
-        'OPTIONS': {
-            'driver': 'ODBC Driver 18 for SQL Server',
-            'extra_params': 'TrustServerCertificate=yes',
-        },
+        # 'OPTIONS': {
+        #     'driver': 'ODBC Driver 18 for SQL Server',
+        #     'extra_params': 'TrustServerCertificate=yes',
+        # },
     },
 }
 
